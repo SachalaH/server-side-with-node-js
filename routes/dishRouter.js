@@ -18,7 +18,7 @@ dishRouter
           res.setHeader("Content-Type", "application/json");
           res.json(dishes);
         },
-        (err) => console.log(err)
+        (err) => next(err)
       )
       .catch((err) => next(err));
   })
@@ -31,7 +31,7 @@ dishRouter
           res.setHeader("Content-Type", "application/json");
           res.json(dish);
         },
-        (err) => console.log(err)
+        (err) => next(err)
       )
       .catch((err) => next(err));
   })
@@ -47,7 +47,7 @@ dishRouter
           res.setHeader("Content-Type", "application/json");
           res.json(response);
         },
-        (err) => console.log(err)
+        (err) => next(err)
       )
       .catch((err) => next(err));
   });
@@ -63,7 +63,7 @@ dishRouter
           res.setHeader("Content-Type", "application/json");
           res.json(dish);
         },
-        (err) => console.log(err)
+        (err) => next(err)
       )
       .catch((err) => next(err));
   })
@@ -85,7 +85,7 @@ dishRouter
           res.setHeader("Content-Type", "application/json");
           res.json(dish);
         },
-        (err) => console.log(err)
+        (err) => next(err)
       )
       .catch((err) => next(err));
   })
@@ -97,7 +97,7 @@ dishRouter
           res.setHeader("Content-Type", "application/json");
           res.json(response);
         },
-        (err) => console.log(err)
+        (err) => next(err)
       )
       .catch((err) => next(err));
   });
@@ -118,7 +118,7 @@ dishRouter
             return next(err);
           }
         },
-        (err) => console.log(err)
+        (err) => next(err)
       )
       .catch((err) => next(err));
   })
